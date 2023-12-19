@@ -96,6 +96,10 @@ footer {
     margin-top: 1vh;
 }
 
+button {
+    cursor: pointer;
+}
+
 .main-base-left-subscribe-button button {
     padding: 1vh;
     border: none;

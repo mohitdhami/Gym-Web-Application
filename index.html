@@ -7,6 +7,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             Gym Web Application
         </title>
@@ -18,10 +20,9 @@
             <nav>
                 <ul>
                     <li class="being-viewed"><a href="#">Gym Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Facilities</a></li>
-                    <li><a href="#">Classes</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="about/about.html">About</a></li>
+                    <li><a href="facilities/facilities.html">Facilities</a></li>
+                    <li><a href="contact/contact.html">Contact</a></li>
                 </ul>
             </nav>
          </header>
@@ -48,7 +49,7 @@
                     </div>
 
                     <div class="main-base-left-subscribe-button">
-                        <button>Join our Gym</button>
+                        <button onclick="redirectToContact()">Join our Gym</button>
                     </div>
                 </div>
 
@@ -190,7 +191,7 @@
                     </div>
 
                     <div class="main-base-left-subscribe-button-2">
-                        <button>Join our Gym</button>
+                        <button onclick="redirectToContact()">Join our Gym</button>
                     </div>
                 </div>
             </div>
@@ -201,7 +202,11 @@
             <span>Gym Web Application &copy;2024 by Mohit Singh Dhami</span>
          </footer>
 
-         
+         <script>
+            function redirectToContact() {
+                window.location.href = "contact/contact.html";
+            }
+         </script>
     </body>
     
 </html>
