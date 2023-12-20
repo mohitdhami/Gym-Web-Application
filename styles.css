@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;;
 }
 body {
     margin: 0;
@@ -16,7 +17,7 @@ nav {
     position: fixed;
     min-height: 4vh;
     min-width: 100vw;
-    /* box-shadow: 0 4px 8px rgba(117, 44, 44, 0.1);    */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -63,12 +64,12 @@ footer {
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
+    height: auto;
 
 }
 
 .main-base-left {
     padding: 1%;
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,6 +117,27 @@ button {
     margin-top: 2vh;
 }
 
+@media screen and (max-width: 600px) {
+    .main-base-left-note p {
+        font-size: medium;
+    }
+
+    .main-base-left-subscribe-note p {
+        font-size: small;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 2;
+    }
+
+    .main-base-left-subscribe-button button {
+        padding: 0.7vh;
+        border: none;
+        border-radius: 8px;
+        font-size: small;
+    }
+}
+
 .main-base-right {
     display: flex;
     flex-direction: column;
@@ -126,6 +148,8 @@ button {
 .main-base-right img {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    width: 100%;
+    height: auto;
 }
 
 .bg-board {
